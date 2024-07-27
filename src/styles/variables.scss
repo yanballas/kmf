@@ -1,2 +1,57 @@
-$color-dark: #000;
-$color-light: #fff;
+$dark: #32334c;
+$light: #fff;
+$primary-100: #9d097c;
+$primary-200: #cd1ba5;
+$primary-300: #fa9397;
+$secondary-100: #c6d9dd;
+$liner: linear-gradient(258.75deg, #2d1178 25.04%, #db2d8f 77.78%);
+
+@font-face {
+  font-display: swap;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/Gilroy-Regular.woff2'),
+    url('../assets/fonts/Gilroy-Regular.woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/Gilroy-Medium.woff2'),
+    url('../assets/fonts/Gilroy-Medium.woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/Gilroy-SemiBold.woff2'),
+    url('../assets/fonts/Gilroy-SemiBold.woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/Gilroy-Bold.woff2'),
+    url('../assets/fonts/Gilroy-Bold.woff');
+}
+
+@mixin screen-lt($breakpoint) {
+  @if $breakpoint == 'xl' {
+    @media (max-width: 1280px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == 'lg' {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+}

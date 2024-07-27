@@ -35,6 +35,8 @@
     "eslint": "^9.2.0"
   },
   "dependencies": {
-    "@vitejs/plugin-legacy": "^5.4.0"
+    "@vitejs/plugin-legacy": "^5.4.0",
+    "aos": "^2.3.4",
+    "swiper": "^11.1.8"
   }
 }
